@@ -1,15 +1,13 @@
-# IMPORTANT
-<p style="color: red;">ALL RIGHTS RESERVED © 2021 CREEPIES</p>
-
-
-
-
 # MuteAssistant
 Mute players using a simple menu
-- FREE VERSION
+**This plugin is some more advanced than other plugins**
 
 # Commands
 - /mute
+
+Command | Usage | Permission
+------- | ----- | ----------
+mute | /mute | muteassistant.command.mute
 
 # Futures
 - Temporary mute
