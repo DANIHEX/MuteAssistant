@@ -16,6 +16,7 @@ class Form implements PocketmineForm {
   public $plugin;
   public $data = [];
   public $l = [];
+  public $target = [];
 
   public function __construct(Main $plugin){
     $this->plugin = $plugin;
@@ -229,5 +230,3 @@ class Form implements PocketmineForm {
   }
 
 }
-
-?>
