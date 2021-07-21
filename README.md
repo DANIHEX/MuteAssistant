@@ -1,5 +1,6 @@
 # IMPORTANT
-<p style="color: red;">ALL RIGHTS RESERVED BY CREEPIES (C) 2021</p>
+<p style="color: red;">ALL RIGHTS RESERVED © 2021 CREEPIES</p>
+
 
 
 
