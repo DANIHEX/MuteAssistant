@@ -15,3 +15,8 @@ Mute players using a simple menu
 - Temporary mute
 - Premently mute
 - Muted players list
+
+# Versions
+version|information|api
+-------|-----------|---
+1.0.0|First version|3.0.0 -> 3.22.0
