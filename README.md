@@ -17,6 +17,6 @@ Mute players using a simple menu
 - Muted players list
 
 # Versions
-version|information|api
--------|-----------|---
-1.0.0|First version|3.0.0 -> 3.22.0
+Version | Information | Date | Api
+------- | ----------- | ---- | ---
+1.0.0 | First version | 21 Jul 2021 | 3.0.0->3.22.0
