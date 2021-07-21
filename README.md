@@ -1,3 +1,6 @@
+# IMPORTANT
+This plugin does **not** include **AI**
+
 # MuteAssistant
 Mute players using a simple menu
 **This plugin is some more advanced than other plugins**
