@@ -1,3 +1,5 @@
+[![Plugin Status](https://poggit.pmmp.io/shield.state/MuteAssistant)](https://poggit.pmmp.io/p/MuteAssistant) [![Plugin Version](https://poggit.pmmp.io/shield.api/MuteAssistant)](https://poggit.pmmp.io/p/MuteAssistant) [![Downloads](https://poggit.pmmp.io/shield.dl/MuteAssistant)](https://poggit.pmmp.io/p/MuteAssistant) [![Total Downloads](https://poggit.pmmp.io/shield.dl.total/MuteAssistant)](https://poggit.pmmp.io/p/MuteAssistant)
+
 # IMPORTANT
 This plugin does **not** include **AI**
 
