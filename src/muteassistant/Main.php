@@ -8,9 +8,11 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
-use muteassistant\command\MainCommand;
+use muteassistant\form\Form;
 
 class Main extends PluginBase implements Listener {
 
@@ -28,7 +30,7 @@ class Main extends PluginBase implements Listener {
 
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    $this->getCommand("mute")->setExecutor(new MainCommand($this));
+    $this->form = new Form($this);
   }
 
   public function onDisable(){
@@ -61,6 +63,19 @@ class Main extends PluginBase implements Listener {
         }
       }
     }
+  }
+
+  public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
+    if($sender instanceof Player){
+      if($sender->hasPermission("muteassistant.command.mute")){
+        $this->form->openMainForm($sender);
+      } else {
+        $sender->sendMessage(Main::ERROR . "You don't have permission to use this command");
+      }
+    } else {
+      $sender->sendMessage(Main::ERROR . "You can use this command only in-game");
+    }
+    return true;
   }
 
   public function mute(Player $staff, Player $target, string $reason, $day = 0, $hour = 0, $minute = 0){
