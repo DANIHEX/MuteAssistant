@@ -11,18 +11,12 @@ use muteassistant\Main;
 use muteassistant\lib\jojoe77777\FormAPI\SimpleForm as SF;
 use muteassistant\lib\jojoe77777\FormAPI\CustomForm as CF;
 
-/**
- * Form class
- */
 class Form implements PocketmineForm {
 
   public $plugin;
   public $data = [];
   public $l = [];
 
-  /**
-   * 
-   */
   public function __construct(Main $plugin){
     $this->plugin = $plugin;
   }
@@ -87,19 +81,19 @@ class Form implements PocketmineForm {
       if($data == null) return true;
       $a = $this->resort($this->l);
       $target = $this->plugin->getServer()->getPlayerExact($a[$data[1]]);
-      /*if($a[$data[1]] === $player->getName()){
+      if($a[$data[1]] === $player->getName()){
         $player->sendMessage(Main::ERROR . "You can not mute your self");
-      }*/
+      }
       if($target instanceof Player){
-        /*if($target->hasPermission("muteassistant.command.mute") or $target->isOp()){
+        if($target->hasPermission("muteassistant.command.mute") or $target->isOp()){
           $player->sendMessage(Main::ERROR . "You can not mute server staff");
-        } else {*/
+        } else {
           if($data[3]){
             $this->plugin->mute($player, $target, $data[2], $data[4], $data[5], $data[6]);
           } else {
             $this->plugin->mute($player, $target, $data[2], "N/A", "N/A", "N/A");
           }
-        //}
+        }
       } else {
         $player->sendMessage(TF::RED . "Player not found!");
       }
