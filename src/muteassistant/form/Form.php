@@ -21,10 +21,6 @@ class Form implements PocketmineForm {
   public function __construct(Main $plugin){
     $this->plugin = $plugin;
   }
-  
-  public function setExecutor(CommandExecutor $executor){
-    parent::setExecutor($executor);
-  }
 
   public function handleResponse(Player $player, $data) : void {
     
