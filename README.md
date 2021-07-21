@@ -8,11 +8,10 @@ Mute players using a simple menu
 **This plugin is some more advanced than other plugins**
 
 # Commands
-- /mute
 
-Command | Usage | Permission
-------- | ----- | ----------
-mute | /mute | muteassistant.command.mute
+Command | Usage | Permission | Information
+------- | ----- | ---------- | -----------
+mute | /mute | muteassistant.command.mute | Main command that opens the main UI
 
 # Futures
 - Temporary mute
