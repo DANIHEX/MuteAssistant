@@ -12,22 +12,13 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
 use muteassistant\command\MainCommand;
 
-/**
- * Main class
- */
 class Main extends PluginBase implements Listener {
 
-  /**
-   * Consts and Variables
-   */
   public const INFO = TF::BOLD . TF::YELLOW . "INFO " . TF::RESET . TF::YELLOW;
   public const ERROR = TF::BOLD . TF::RED . "ERROR " . TF::RESET . TF::RED;
   public $db;
   public $target = [];
 
-  /**
-   * Call when plugin is loading
-   */
   public function onLoad(){
     $this->getLogger()->info(self::INFO . "Plugin is loading...");
     @mkdir($this->getDataFolder());
@@ -35,17 +26,11 @@ class Main extends PluginBase implements Listener {
     $this->db->exec("CREATE TABLE IF NOT EXISTS mutelist(player TEXT PRIMARY KEY, time INT, reason TEXT, staff TEXT);");
   }
 
-  /**
-   * Call when plugin enables
-   */
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->getCommand("mute")->setExecutor(new MainCommand($this));
   }
 
-  /**
-  * Call when plugin disables
-  */
   public function onDisable(){
     $this->getLogger()->info(self::INFO . "Plugin disabled.");
   }
