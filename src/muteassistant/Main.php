@@ -20,6 +20,7 @@ class Main extends PluginBase implements Listener {
   public const ERROR = TF::BOLD . TF::RED . "ERROR " . TF::RESET . TF::RED;
   public $db;
   public $target = [];
+  public $form;
 
   public function onLoad(){
     $this->getLogger()->info(self::INFO . "Plugin is loading...");
