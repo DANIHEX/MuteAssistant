@@ -47,3 +47,4 @@ class MainCommand extends PluginCommand implements CommandExecutor {
   }
 
 }
+
