@@ -4,7 +4,7 @@ description: Mute players as easy as you can with MuteAssistant
 version: 1.0.0
 main: muteassistant\Main
 api: [3.0.0, 4.0.0]
-author: Creepies
+author: DAV33N
 
 commands:
   mute:
